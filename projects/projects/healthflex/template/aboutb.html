@@ -1,0 +1,130 @@
+﻿{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <div class=" text-center mt-5">
+      
+
+
+
+
+        <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+          <div class = "row pt-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+               
+                <button class="btn btn-info"><a class="text-light" href="{% url "aboutb" %}">About Breast Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualb" %}">Breast Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light"  href="{% url "breastpredict" %}">Make Predictions</a></button></div><br><br>
+                <div class="col-md-1"></div>
+
+                    
+               
+
+
+
+        <div class="accordion" id="accordionExample">
+            <div class="card mt-3">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                   What id Breast Cancer?
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly-inverted nipple, or a red or scaly patch of skin. In those with distant spread of the disease, there may be bone pain, swollen lymph nodes, shortness of breath, or yellow skin. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Signs and symptoms 
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Breast cancer most commonly presents as a lump that feels different from the rest of the breast tissue. More than 80% of cases are discovered when a person detects such a lump with the fingertips. The earliest breast cancers, however, are detected by a mammogram. Lumps found in lymph nodes located in the armpits may also indicate breast cancer.
+                    •	Paget’s Disease of Breast
+                    •	Inflammatory Breast Cancer
+                    •	Fibroadenoma
+                    
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Causes
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    •	Increasing age. A personal history of breast conditions.
+                    •	A personal history of breast cancer. 
+                    •	A family history of breast cancer.
+                    •	Inherited genes that increase cancer risk.
+                    •	Radiation exposure.
+                    
+                    
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Preventions
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                   <h5><b> •Lifestyle</b> </h5>
+                    Women can reduce their risk of breast cancer by maintaining a healthy weight, reducing alcohol use, increasing physical activity, and breast-feeding. These modifications might prevent 38% of breast cancers in the US, 42% in the UK, 28% in Brazil, and 20% in China. The benefits with moderate exercise such as brisk walking are seen at all age groups including postmenopausal women. High levels of physical activity reduce the risk of breast cancer by about 14%. Strategies that encourage regular physical activity and reduce obesity could also have other benefits, such as reduced risks of cardiovascular disease and diabetes. 
+                    The American Cancer Society and the American Society of Clinical Oncology advised in 2016 that people should eat a diet high in vegetables, fruits, whole grains, and legumes. High intake of citrus fruit has been associated with a 10% reduction in the risk of breast cancer. Marine omega-3 polyunsaturated fatty acids appear to reduce the risk. High consumption of soy-based foods may reduce risk. 
+                    <h5><b> •	Pre-emptive surgery</b> </h5>
+                    Removal of both breasts before any cancer has been diagnosed or any suspicious lump or other lesion has appeared (a procedure known as "prophylactic bilateral mastectomy" or "risk reducing mastectomy") may be considered in people with BRCA1 and BRCA2 mutations, which are associated with a substantially heightened risk for an eventual diagnosis of breast cancer. Evidence is not strong enough to support this procedure in anyone but those at the highest risk. BRCA testing is recommended in those with a high family risk after genetic counseling. It is not recommended routinely. This is because there are many forms of changes in BRCA genes, ranging from harmless polymorphisms to obviously dangerous frameshift mutations. The effect of most of the identifiable changes in the genes is uncertain. Testing in an average-risk person is particularly likely to return one of these indeterminate, useless results. Removing the second breast in a person who has breast cancer (contralateral risk‐reducing mastectomy or CRRM) may reduce the risk of cancer in the second breast, however, it is unclear if removing the second breast in those who have breast cancer improves survival. 
+                    <h5><b>•	Medications</b> </h5>
+                    The selective estrogen receptor modulators (such as tamoxifen) reduce the risk of breast cancer but increase the risk of thromboembolism and endometrial cancer. There is no overall change in the risk of death. They are thus not recommended for the prevention of breast cancer in women at average risk but it is recommended they be offered for those at high risk and over the age of 35. The benefit of breast cancer reduction continues for at least five years after stopping a course of treatment with these medications. 
+                    
+                      
+                      
+                  </div>
+
+
+                </div>
+              </div>
+
+ 
+          </div>
+
+      </div>
+      <div class="col-md-1"></div>
+    
+    </div>
+      </form>
+
+
+
+
+
+
+    </div>
+</div>
+</div>
+
+{% endblock %}

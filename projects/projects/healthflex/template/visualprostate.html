@@ -1,0 +1,129 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+      
+        <div class=" text-center mt-5" style ="font-family: Century Gothic; width: 900px">
+
+            <div class = "row pt-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                <button class="btn btn-info"><a class="text-light" href="{% url "aboutprostate" %}">About Prostate Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualprostate" %}">Prostate Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light"  href="{% url "prostatepredict" %}">Make Predictions</a></button></div><br><br>
+                  <div class="col-md-1"></div>
+
+
+                </div><hr>
+
+             
+
+                
+               <p style = "font-family: Century Gothic; color: green ">Click Below for Making Your Own Visualizations.</p>
+               <form action="" method="POST">
+                {% csrf_token %}
+                 <div class=" dropdown">
+                
+                  <select name="type" class="p-2">
+                  
+                  
+                    <option value="area">Area</option>
+                    <option value="texture">Texture</option>
+                    <option value="perimeter">Perimeter</option>
+                    <option value="compactness">Compactness</option>
+                   
+               
+                   
+                    <option value="radius">Radius</option>
+                    <option value="smoothness">Smoothness</option>
+                    <option value="symmetry">Symmetry</option>
+                    <option value="fractal_dimension">Fractal_dimension</option></div>
+                   
+  
+                    </select>
+                    <input class="btn" style="background: lightseagreen;" type="submit" value="submit"/>
+               </div>
+              </form>
+               
+            
+
+<br>
+<form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px  lightseagreen; border-radius:12% ">
+
+                <div class = "row mt-3">
+                 <div class="col-md-12 text-info"><hr>
+                     <h2 class="mb-3"> Visualizations of Prostate Cancer</h2><hr><br>
+
+                 </div></div>
+
+
+
+                  <div class = "row pt-3">
+                    
+                    <div class="col-md-1"></div>
+                      <div class="col-md-4">
+               <img class= "mb-3" src={%static "prostate/1.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+               <img class= "mb-3" src={%static "prostate/11.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+               <img class= "mb-3" src={%static "prostate/111.png" %} class="d-block " alt="..."width="100%"  height="300px" ><br> 
+               <img class= "mb-3" src={%static "prostate/1111.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+               <img class= "mb-3" src={%static "prostate/11111.png" %} class="d-block" alt="..."width="100%" height="300px" ><br>                
+              <img class= "mb-3" src={%static "prostate/111111.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+
+              <img class= "mb-3" src={%static "prostate/13.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+             
+
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+
+
+
+
+
+                      <div class="col-md-1"></div>
+
+                      <div class="col-md-4">
+
+                        <img class= "mb-3" src={%static "prostate/2.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "prostate/22.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                        <img class= "mb-3" src={%static "prostate/2222.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>   
+                        <img class= "mb-3" src={%static "prostate/22222.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>  
+
+                        <img class= "mb-3" src={%static "prostate/222222.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>  
+                        <img class= "mb-3" src={%static "prostate/15.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "prostate/14.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+
+                     
+                     
+                      </div>
+
+
+                  
+                     
+
+                               <div class="col-md-1"></div>
+      
+                     
+                      </div>
+
+
+                  </form>
+
+                
+  </div>
+</div>
+</div>
+
+
+        {% endblock %}

@@ -1,0 +1,129 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <div class=" text-center mt-5">
+      
+
+
+
+
+        <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+          <div class = "row pt-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <button class="btn btn-info"><a class="text-light" href="{% url "aboutcervical" %}">About Cervical Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualcervical" %}">Cervical Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light"  href="{% url "cervicalpredict" %}">Make Predictions</a></button></div><br><br>
+                <div class="col-md-1"></div>
+
+            
+         
+
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           What id Cervical Cancer?
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Cervical cancer is a cancer arising from the cervix. It is due to the abnormal growth of cells that have the ability to invade or spread to other parts of the body. Early on, typically no symptoms are seen. Later symptoms may include abnormal vaginal bleeding, pelvic pain or pain during sexual intercourse. While bleeding after sex may not be serious, it may also indicate the presence of cervical cancer. 
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Signs and symptoms 
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            The early stages of cervical cancer may be completely free of symptoms. Vaginal bleeding, contact bleeding (one most common form being bleeding after sexual intercourse), or (rarely) a vaginal mass may indicate the presence of malignancy. Also, moderate pain during sexual intercourse and vaginal discharge are symptoms of cervical cancer. In advanced disease, metastases may be present in the abdomen, lungs, or elsewhere.
+            Symptoms of advanced cervical cancer may include: loss of appetite, weight loss, fatigue, pelvic pain, back pain, leg pain, swollen legs, heavy vaginal bleeding, bone fractures, and (rarely) leakage of urine or feces from the vagina. Bleeding after douching or after a pelvic exam is a common symptom of cervical cancer. 
+            
+            
+            
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Causes
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            Infection with some types of HPV is the greatest risk factor for cervical cancer, followed by smoking. HIV infection is also a risk factor.[26] Not all of the causes of cervical cancer are known, however, and several other contributing factors have been implicated. 
+            •	Human papillomavirus
+            •	Smoking
+            •	ORAL CONTRACEPTIVES
+            •	Multiple Pregnancies
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Preventions
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <h5><b>• Screening</b> </h5>
+
+            Checking cervical cells with the Papanicolaou test (Pap test) for cervical pre-cancer has dramatically reduced the number of cases of, and mortality from, cervical cancer. Liquid-based cytology may reduced the number of inadequate samples. Pap test screening every three to five years with appropriate follow-up can reduce cervical cancer incidence up to 80%. Abnormal results may suggest the presence of precancerous changes, allowing examination and possible preventive treatment, known as colposcopy. The treatment of low-grade lesions may adversely affect subsequent fertility and pregnancy. Personal invitations encouraging women to get screened are effective at increasing the likelihood they will do so. Educational materials also help increase the likelihood women will go for screening, but they are not as effective as invitations.
+            
+            <h5><b>• Barrier protection</b> </h5>
+            Barrier protection or spermicidal gel use during sexual intercourse decreases, but does not eliminate risk of transmitting the infection, though condoms may protect against genital warts. They also provide protection against other sexually transmitted infections, such as HIV and Chlamydia, which are associated with greater risks of developing cervical cancer.
+            
+            <h5><b>• Vaccination</b> </h5>
+            Three HPV vaccines (Gardasil, Gardasil 9, and Cervarix) reduce the risk of cancerous or precancerous changes of the cervix and perineum by about 93% and 62%, respectively. The vaccines are between 92% and 100% effective against HPV 16 and 18 up to at least 8 years. 
+            
+            <h5><b>• Nutrition</b> </h5>
+            Vitamin A is associated with a lower risk] as are vitamin B12, vitamin C, vitamin E, and beta-Carotene. 
+            
+            
+              
+              
+          </div>
+
+
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+<div class="col-md-1"></div>
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}

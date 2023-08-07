@@ -1,0 +1,24 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="main-content">
+    <div class="container">
+
+        <div class="row" style = "font-family: Century Gothic">
+<div class="col-md-2"></div>
+<div class="col-md-10" style="padding-top: 20%;"><center>
+   <div style="padding-left: 3%;"> <h2>MAKE PREDICTION HERE. </h2>
+    <h3>Please Select an Image for Prediction.</h3></div><br></center>
+
+        <form method="POST" enctype="multipart/form-data" style = " width: 900px  ; border : 5px dashed rgb(109, 237, 241) ; padding: 50px ">
+            {% csrf_token %} 
+            <input type="file" name="sentFile" />
+            <input type="submit" name="submit" value="Upload" />
+        </form>
+    </div></div>
+                
+</div>
+</div>
+
+{% endblock %}

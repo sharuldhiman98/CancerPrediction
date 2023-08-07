@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Create a Post </title>
+</head>
+
+<body>
+<h1>Create a Post </h1>
+<form action="" method="POST">
+{% csrf_token %}
+<select name="type">
+        <option value="radius_mean">radius_mean</option>
+    <option value="texture_mean">texture_mean</option>
+    <option value="perimeter_mean">perimeter_mean</option>
+
+</select>
+<input type="submit" value="Post"/>
+</form>
+</body>
+
+</html>

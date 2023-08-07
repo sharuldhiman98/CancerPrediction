@@ -1,0 +1,125 @@
+{% extends 'basemain.html' %}
+{% block content %}
+{% load static %}
+<title> HEY! REGISTER HERE</title>
+<style >
+        
+     #layer{                background-repeat: no-repeat;
+           background-size: 100% 1000px;}
+</style>
+
+	
+<body id= "layer" style=" background-image: url({%static "userlr.jpg" %})" >
+	<form action="" method="POST" >
+          {% csrf_token %}
+          <div style="font-family: Century Gothic ; padding: 100px;"> <center>
+
+          <h2 class="text-light" style="font-family: century gothic"> <b>Create Account</b></h1><brs>
+		<h5 class="text-light" style="font-family: century gothic" > Get started with your free account</h5>
+		<hr>
+	
+		
+	  	
+	  	   <div class="container">
+	  		 
+	  		 <div class="row">
+	  		 	<div class="col-md-4 "></div>
+	  		 	<div class="col-md-4">
+	  			    
+	  			    
+	  	     <div class="input-group mb-3">
+             <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span>              
+                   <input type="text" class="form-control" name="first_name" placeholder="first name" ><br></div></div>
+                  
+                  
+                  
+                  
+                   <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                   <input type="text" class="form-control" name="last_name" placeholder="last name" ><br></div></div>
+                  
+                  
+                  
+                  
+                   <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                   <input type="email" class="form-control" name="email" placeholder="Enter Your EMAIL" ><br></div></div>
+                  
+                  
+                  
+                  
+                 
+                 
+                   <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                   <input type="text" class="form-control" name="city" placeholder="city" ><br></div></div>
+                  
+                  
+                   <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                   <input type="text" class="form-control" name="state" placeholder="state" ><br></div></div>
+                  
+                  
+                  
+                   <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                   <input type="text" class="form-control" name="pincode" placeholder="pincode" ><br></div></div>
+
+
+
+
+              <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-phone"></i></span>
+                   <input type="tel" class="form-control" name="phone" placeholder="Phone Number" ><br></div></div>
+
+
+              <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-home"></i></span>
+                    <input type="text" class="form-control" name="address" placeholder="Your Address" aria-label="Username" im9 -describedby="basic-addon1"><br></div></div>
+
+
+             
+               <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-pen"></i></span>
+                    <input type="Password" class=" form-control" name="password" placeholder="Set Password" aria-label="Username" im9 -describedby="basic-addon1"><br></div></div>
+
+
+                    <div class="input-group mb-3">
+                         <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span> 
+                        <input type="date" class="form-control" name="dob" placeholder="date of birth" ><br></div></div>
+                      
+
+
+                        {% if formpost %}
+                        Email already exists,please try to register with another emailid
+                        {% endif %}
+                                {% csrf_token %}<br>
+
+                    <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                    <div class="text-center"> <button class="btn  btn-success" value="Register">Submit</button></div></div></div>
+
+
+
+                    <div class="col-md-4 "></div>
+
+  
+</div>
+
+</div></div>
+
+	
+		
+	</form>
+
+     {% endblock %}

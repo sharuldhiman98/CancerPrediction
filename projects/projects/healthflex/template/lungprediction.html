@@ -1,0 +1,66 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8 text-center " style = "font-family: 'Gill Sans'; width: 900px ;margin-top: 15%;">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+  
+    <h1 class=" text-info pb-2" >Lung Cancer </h1><hr>
+
+ <h4 class="pb-5" style = "font-family: Century Gothic; color: green ">Please Enter the Following Details for Making Predictions.</h4>
+   <div class="row">
+ 
+ <div class="col-md-1"></div>
+ <div class="input-group mb-3">
+
+  <div class="col-md-3">
+
+
+        <input type="number" class="form-control" placeholder="Age" name="Age" ><hr>
+      
+        
+    </div>
+ <div class="col-md-1"></div>
+
+
+ <div class="col-md-3">
+    <input type="number" class="form-control" placeholder="Smokes"  name="Smokes" ><hr>
+    <input type="number" class="form-control" placeholder="Alcohol" name="Alkhol" ><hr>
+    <div class="text-center">
+        <input class="btn btn-info"  type="submit" value="submit"/>
+        </div>
+
+
+    
+</div>
+<div class="col-md-1"></div>
+
+<div class="col-md-3">
+    <input type="number" class="form-control" placeholder="Area" name="AreaQ"><hr>
+  
+
+</div>
+
+   </div>
+   </div>
+
+
+</form>
+
+
+</div>
+<div class="col-md-1"></div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

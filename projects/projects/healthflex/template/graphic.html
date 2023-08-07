@@ -1,0 +1,73 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8 text-center " style = "font-family: Century Gothic; width: 900px ;margin-top: 10%; ">
+
+
+ <p style = "font-family: Century Gothic; color: green ">Select Another Option for Making Your Own Visualizations.</p>
+               <form action="" method="POST" >
+                {% csrf_token %}
+               <div class=" dropdown">
+                
+                <select name="type" class="p-2">
+                  
+                  
+                 
+  
+                    <option value="radius_mean" >Radius_mean</option>
+                    <option value="texture_mean" >Texture_mean</option>
+                    <option value="perimeter_mean" >Perimeter_mean</option>
+                    <option value="area_mean" >Area_mean</option>
+                    <option value="smoothness_mean" >Smoothness_mean </option>
+                    <option value="compactness_mean" >Compactness_mean</option>
+                    <option value="concavity_mean" >Concavity_mean</option>
+                    <option value="concave points_mean" >Concave points_mean</option>
+                    <option value="symmetry_mean" >Symmetry_mean</option>
+                    <option value="radius_worst" >radius_worst</option>
+               
+                    <option value="fractal_dimension_mean" >Fractal_dimension_mean</option>
+  
+                    <option value="symmetry_se " >symmetry_se</option>
+  
+                    <option value="radius_se" >Radius_se</option>
+                    <option value="texture_se" >texture_se</option>
+                    <option value="perimeter_se" >perimeter_se</option>
+                    <option value="area_se" >area_se</option>
+                    <option value="smoothness_se" >smoothness_se</option>
+                    <option value="compactness_se" >compactness_se</option>
+                    <option value="concavity_se" >concavity_se</option>
+                    <option value="concave points_se" >concave points_se</option>
+                    <option value="fractal_dimension_se" >fractal_dimension_se</option>                                  
+                    <option value="texture_worst" >texture_worst</option>
+                    <option value="perimeter_worst" >perimeter_worst</option>
+                    <option value="area_worst" >area_worst</option>
+                    <option value="smoothness_worst" >Smoothness_worst</option>
+                    <option value="compactness_worst" >compactness_worst</option>
+                    <option value="concavity_worst" >concavity_worst</option>
+                    <option value="concave points_worst" >concave points_worst</option>
+                    <option value="symmetry_worst" >symmetry_worst</option>
+                    <option value="fractal_dimension_worst" >fractal_dimension_worst</option>
+                   
+  
+                    </select>
+                    <input class="btn btn-info"  type="submit" value="submit"/>
+               </div>
+               
+            </form>
+  
+
+<br>
+<form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+
+<img src="data:image/png;base64,{{graphic|safe}}" >
+</form>
+
+
+</div>
+<div class="col-md-1"></div>
+</div>
+
+{% endblock %}

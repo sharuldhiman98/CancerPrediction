@@ -1,0 +1,48 @@
+
+     {% extends 'dashboard.html' %}
+     {% block content %}
+     
+       <div class="container"> 
+<div class = "row pt-5">
+  <div class="col-md-3"></div>
+  <div class="col-md-7  " style="border: 3px solid #5bc0de ; padding-top: 40px ;  padding-bottom: 30px ; margin-top: 100px">
+    <form action="" method="POST">
+      {% csrf_token %}
+      
+                <h1 style=" color:black ; font-family: Century Gothic " class="text-center  pb-4"  > Review  </h1>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+          <div class="col-md-10">
+
+           
+              <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                 <span class="input-group-text" id="basic-addon1 ">Review</span>
+              </div>
+                  <input type="text" class="form-control" name="subject" placeholder="Enter Subject" aria-label="Username" aria-describedby="basic-addon1">
+             </div>
+
+             <div class="input-group">
+ 
+              <textarea class="form-control mt-1" aria-label=" textarea " name="message" placeholder="Message" ></textarea>
+              </div>
+              <button class="btn btn-info mb-2  mt-3"  style="margin-left: 40%;" value="Review">SUBMIT</button>    
+
+              <div class="col-md-1"></div>
+           </form>
+
+
+     <div class="col-md-2"></div>
+  </div>
+
+ 
+
+
+
+            
+</div>
+</div>
+      
+      
+{% endblock %}

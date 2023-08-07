@@ -1,0 +1,60 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+{% load static %}
+      <!-- header ends here -->
+     <div class="container"> 
+<div class = "row pt-5 ">
+  <div class="col-md-2"></div>
+  <div class="col-md-5 pt-5 mt-5 " style="font-family: Century Gothic">
+          <form style = " background-color: lightgrey ; border : 100px ; padding: 50px; box-shadow: 10px 10px darkgrey; border-radius:30% ">
+      <div class="row ">
+
+          <div class= "col-md-4 ">
+
+             <img src= {%static "admin.png" %} height="150px" width="150px" alt="admin" class="img-fluid rounded-circle">
+             <a href="{% url "editprofile" %}" >EDIT PROFILE</a>
+
+          </div>
+
+
+   <div class= "col-md-8"> 
+    <label> <b>Email: </b></label><label> {{user.email}} </label><br>
+    <label> <b>First Name: </b></label><label> {{user.first_name}} </label><br>
+    <label> <b>Last Name: </b></label><label> {{user.last_name}} </label><br>
+    <label> <b>City: </b></label><label> {{user.city}} </label><br>
+    <label> <b>State: </b></label><label> {{user.state}} </label><br>
+    <label> <b>DoB: </b></label><label> {{user.dob}}</label><br>
+    <label> <b>Pincode: </b></label><label> {{user.pincode}} </label><br>
+
+  </div>
+
+
+</div>
+
+</form>
+
+</div>
+ <div class="col-md-1"></div>
+    <div class="col-md-3 pt-5 mt-5 " style="font-family: Century Gothic" >
+    <div class="text-center mb-3"><img src= {%static "admin.png" %}  height="100px" width="100px" alt="admin" class="img-fluid rounded-circle"><br><span class="text-info">Change Image</span><br></div>
+    <div class="input-group">
+    <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+    <label class="custom-file-label " for="inputGroupFile04">Choose file</label>
+    </div></div>
+    <div class="input-group-append text-center">
+     <button class="btn btn-info btn-block mt-3" type="button" id="inputGroupFileAddon04">Upload</button>
+    </div>
+    </div>
+
+
+     <div class="col-md-1"></div>
+  </div>
+
+ 
+
+
+
+             
+</div>
+{% endblock %}

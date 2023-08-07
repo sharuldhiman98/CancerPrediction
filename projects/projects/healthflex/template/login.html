@@ -1,0 +1,52 @@
+{% extends 'basemain.html' %}
+{% include 'basefunc.html' %}
+
+
+{% block content %}
+{% load static %}
+<title> HEY! LOGIN HERE</title>
+
+<style >
+        
+    #layer{                background-repeat: no-repeat;
+            background-size: 100% 600px;}
+</style>
+
+
+<body id= "layer" style=" background-image: url({%static "userlr.jpg" %})" >
+	<form action="" method="POST" > 
+        {% csrf_token %}
+        <center>
+		 <h2 class="m-3 text-light" style="font-family: Gill Sans"> <b>Already have an account?</b> </h2>
+		<h5 class="text-light" style="font-family: Gill Sans"> LOGIN HERE !</h5>
+		<hr>
+
+
+		 <div class="container">
+	  		 
+	  		 <div class="row">
+	  		 	<div class="col-md-4 "></div>
+	  		 	<div class="col-md-4">
+	  			    
+	  			    
+	  	     <div class="input-group mb-3">
+             <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span>              
+                   <input type="email" class="form-control" placeholder="Enter Emailid"  name="email" aria-label="Username" aria-describedby="basic-addon1"><br></div></div>
+
+
+              <div class="input-group ">
+              <div class="input-group-prepend">             
+                   <span class="input-group-text" id="basic-addon1"><i class="icofont-pen"></i></span>
+                   <input type="password" class="form-control" placeholder="Enter Your password" name="password" aria-label="Username" aria-describedby="basic-addon1"><br></div></div>
+                   {% if formpost %}
+                   Invalid details or your account is not active yet
+                   {% endif %}
+                    {% csrf_token %}<br>
+                    <div class="text-left mb-5"><input  class="btn bg-success btn-lg" type="submit" value="SUBMIT"/><span><a  class="text-left text-light ml-3" href="{% url "forgotpassword" %}">forgot password?</a></span></div>              <h5 class="text-light" style="font-family: 'Gill Sans';">Don't have an Account? <a class ="navbar-brand text-info" href= "{% url "register" %}" >Sign Up </a></h5>
+          </div>
+      </div>
+  </div>
+</center>
+</form>
+{% endblock %}

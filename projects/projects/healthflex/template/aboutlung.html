@@ -1,0 +1,120 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <div class=" text-center mt-5">
+      
+
+
+
+
+        <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+          <div class = "row pt-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <button class="btn btn-info"><a class="text-light" href="{% url "aboutlung" %}">About Lung Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visuallung" %}">Lung Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light" href="{% url "lungpredict" %}">Make Predictions</a></button></div><br><br>
+                <div class="col-md-1"></div>
+
+   
+
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           What id Lung Cancer?
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Lung cancer, also known as lung carcinoma, is a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung. This growth can spread beyond the lung by the process of metastasis into nearby tissue or other parts of the body. Most cancers that start in the lung, known as primary lung cancers, are carcinomas. The two main types are small-cell lung carcinoma (SCLC) and non-small-cell lung carcinoma (NSCLC). The most common symptoms are coughing (including coughing up blood), weight loss, shortness of breath, and chest pains.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Signs and symptoms 
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            Signs and symptoms which may suggest lung cancer include: 
+•	Respiratory symptoms: coughing, coughing up blood, wheezing, or shortness of breath
+•	Systemic symptoms: weight loss, weakness, fever, or clubbing of the fingernails
+•	Symptoms due to the cancer mass pressing on adjacent structures: chest pain, bone pain, superior vena cava obstruction, or difficulty swallowing
+If the cancer grows in the airways, it may obstruct airflow, causing breathing difficulties. The obstruction can also lead to accumulation of secretions behind the blockage, and increase the risk of pneumonia. 
+
+            
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Causes
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            Cancer develops after genetic damage to DNA and epigenetic changes. Those changes affect the cell's normal functions, including cell proliferation, programmed cell death (apoptosis), and DNA repair. As more damage accumulates, the risk for cancer increases. 
+            Main Causes are:-
+            •	Smoking
+            •	Radon Gas
+            •	Asbestos
+            •	Air Pollution
+            •	Genetics
+            
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Preventions
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Smoking prevention and smoking cessation are effective ways of preventing the development of lung cancer.
+              
+              
+          </div>
+
+
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+<div class="col-md-1"></div>
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8 text-center " style = "font-family: Century Gothic; width: 900px ;margin-top: 10%; ">
+
+
+ <p style = "font-family: Century Gothic; color: green ">Select Another Option for Making Your Own Visualizations.</p>
+              
+ 
+              <form action="" method="POST" >
+              {% csrf_token %}
+               <div class=" dropdown">
+                
+                <select name="type" class="p-2">
+                  
+                    <option value="diagnosis_result">Diagnosis</option>
+                   <option value="area">Area</option>
+                   <option value="texture">Texture</option>
+                   <option value="perimeter">Perimeter</option>
+                   <option value="compactness">Compactness</option>
+                  
+                  
+                  
+                   <option value="radius">Radius</option>
+                   <option value="smoothness">Smoothness</option>
+                   <option value="symmetry">Symmetry</option>
+                   <option value="fractal_dimension">Fractal_dimension</option>
+                   
+  
+                    </select>
+                    <input class="btn" style="background: lightseagreen;" type="submit" value="submit"/>
+               </div>
+               
+            </form>
+  
+    
+<br>
+<form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+
+<img src="data:image/png;base64,{{graphic|safe}}" >
+</form>
+
+
+    </div>
+<div class="col-md-1"></div>
+</div>
+
+
+{% endblock %}

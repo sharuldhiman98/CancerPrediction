@@ -1,0 +1,82 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+      <!-- header ends here -->
+ 
+     
+
+<div class = "row pt-5">
+  <div class="col-md-3"></div>
+  <div class="col-md-8 pt-5  " >
+   
+    <form class="border border-info" action="" method="POST">
+      {% csrf_token %}
+        <h1 style=" color:black ; font-family: Century Gothic " class="text-center pt-4 pb-3"  > Edit Profile  </h1>
+
+      <div class="row">
+        <div class="col-md-1 "></div>
+        <div class="col-md-5 ">
+              <label style="font-family: Century Gothic"> First Name </label> <br>
+              <input type="text" class="form-control" placeholder="Enter Your First Name" name="first_name" value={{user.first_name}}  >
+       </div>
+       <div class="col-md-5">
+              <label style="font-family: Century Gothic"> Last Name </label> <br>
+              <input type="text" placeholder="Enter Your Last Name" name="last_name" class="form-control"  value={{user.last_name}} >
+      </div>
+      <div class="col-md-1 "></div>
+      
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <label style="font-family: Century Gothic "  class="mt-2"> Date of Birth </label> <br>
+        <input type="email" placeholder="Enter email" name="email" class="form-control"  value={{user.email}} ></div>
+      <div class="col-md-1"></div>
+
+     <div class="col-md-1"></div>
+     <div class="col-md-10">
+       <label style="font-family: Century Gothic "  class="mt-2"> Date of Birth </label> <br>
+       <input type="Date" placeholder="Enter Your dob" name="dob" class="form-control"  value={{user.dob}} ></div>
+     <div class="col-md-1"></div>
+       
+
+
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+              <label style="font-family: Century Gothic "  class="mt-2"> City </label> <br>
+              <input type="text" class="form-control" name="city" placeholder="Enter City"  value={{user.city}} aria-label="Username" aria-describedby="basic-addon1">
+
+       </div>
+             
+ 
+       <div class="col-md-5">
+              <label style="font-family: Century Gothic " class="mt-2"> State </label> <br>
+              <input type="text" class="form-control" name="state" placeholder=" Enter State"   value={{user.state}} aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+  <div class="col-md-1"></div>
+      
+         
+        <div class="col-md-1"></div>
+  <div class="col-md-10">
+       <label style="font-family: Century Gothic " class="mt-2"> Pincode </label> <br>
+       <input type="text" class="form-control" name="pincode" placeholder="Enter Pincode"  value={{user.pincode}} aria-label="Username" aria-describedby="basic-addon1">
+   
+        <label style="font-family: Century Gothic " class="mt-2"> Address </label> <br>
+        <textarea class="form-control" name="address" placeholder="Enter Address"  value={{user.address}} aria-label="Username" ></textarea>
+   
+        <div class=" text-center" style="font-family: Century Gothic "><button class="btn btn-info pt-2 mt-3" > SUBMIT </button></div>
+       </div>
+  <div class="col-md-1"></div>
+
+
+</form>
+
+  </div>  
+
+ 
+
+
+
+             <div class="col-md-1"></div>
+</div>
+</div>
+
+      
+{% endblock %}

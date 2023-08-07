@@ -1,0 +1,79 @@
+{% extends 'basemain.html' %}
+{% block content %}
+{% load static %}
+<title> CONTACT US</title>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25891.29700642067!2d74.92989334526165!3d31.660994319446388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196368fac3a7d9%3A0x3c1072af880d7974!2sFortis%20Escorts%20Hospital%2C%20Amritsar!5e0!3m2!1sen!2sin!4v1582097208930!5m2!1sen!2sin" width="100%" height="550" frameborder="0" style="border:2px solid #1F96DE; padding-bottom:20px " allowfullscreen="yes"></iframe>
+
+ <div class="row">
+ 	<div class="col-md-6">
+ 		<h1 class="ml-5 pt-4" style="font-family:Gill Sans"><b>Contact Us:</b></h1>
+ 		<h6 class="ml-5 text-secondary pt-1 pb-4">please fill this form to contact us</h6>
+ 		<form class="ml-5 mb-1 p-5 bg-info " action="" method="POST">
+			{% csrf_token %}
+ 			<p class="ml-1 text-light pt-2"><b>FULL NAME<span class="text-danger">*</span></b></p>
+ 			<input type="text" name="name" placeholder="enter name" required="required" class="form-control pb-2">
+ 			<p class="ml-1 text-light pt-2"><b>EMAILID<span class="text-danger">*</span></b></p>
+ 			<input type="text" name="email" placeholder="enter emailId" class="form-control">
+ 			<p class="ml-1 text-light pt-2"><b>MOBILE<span class="text-danger">*</span></b></p>
+ 			<input type="number" name="contact" placeholder="mobile" class="form-control">
+ 			<p class="ml-1 text-light pt-2"><b>YOUR MESSAGE<span class="text-danger">*</span></b></p>
+ 			<textarea rows="5" style="padding-bottom: 10px "type="text" name="message" placeholder="message" class="form-control"></textarea><br/><br/>
+            <div class="text-right"><button class="btn btn-success text-center"  value="Contactus"><a href="{% url "thankyou" %}">SUBMIT</a></button></div>
+ 		</form>
+ 	</div>
+ 	<div class="col-md-6">
+ 		<!--img src="project1.png" height="300" width="300" style="padding-top: 134px"!-->
+ 		<i class="icofont-medical-sign-alt icofont-10x mt-5 text-info"></i>
+ 		<h5 style="padding-bottom: 15px; padding-top: 15px; font-family:Gill Sans"><b><u>Contact Info & Details </u>:</b></h5>
+ 		<p><b>Working Hours:</b> 9:00AM TO 9:00PM (Full week)</p>
+ 		<P><B>Phone:</B> 788889898</P>
+ 		<P><B>Email:</B> info@gmail.com</P>
+ 		<P><B>Address:</B> Plot No.78 GT road Amritsar,Punjab</P>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25891.29700642067!2d74.92989334526165!3d31.660994319446388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196368fac3a7d9%3A0x3c1072af880d7974!2sFortis%20Escorts%20Hospital%2C%20Amritsar!5e0!3m2!1sen!2sin!4v1582097208930!5m2!1sen!2sin" width="400" height="200" frameborder="0" style="border:2px solid #1F96DE; padding-bottom:20px " allowfullscreen="yes"></iframe>
+        <h5 style="padding-top: 20px; padding-bottom: 15px; font-family:Gill Sans"><b><u>Book An Appointment</u>:</b></h5>
+ 		<p>To book an appointment with our doctors please fill the form on the left side </p>
+        </div>
+ 	</div>
+ </div>    
+ <div class="container-fluid bg-info text-light pb-5 pt-4">
+	<div class="container">
+		<div class="row text-center" style="margin-top: 50px;">
+		<div class="col-md-4 ">
+			<i class="icofont-car-alt-4 icofont-5x ml-4" style="color: darkblue"></i>
+			<h6 style="font-family: Arial Black" class="text-center ml-5">PARKING SPACE</h6>
+			<p class="ml-5">you can park outside</p>
+		</div>
+		<div class="col-md-4">
+			<i class="icofont-bus icofont-5x ml-5 text-right" style="color: darkblue"></i>
+			<h6 style="font-family: Arial Black" class="text-center ml-5">BUS ROUTES</h6>
+			<p class="ml-5">easy routes by buses</p>
+		</div>
+		<div class="col-md-4 ">
+			<i class="icofont-wheelchair icofont-5x ml-4 text-right" style="color: darkblue"></i>
+			<h6 style="font-family: Arial Black" class="text-center ml-5">ACCESSIBILTY</h6>
+			 <p class="ml-5">easy to access</p>
+		</div>
+		</div>
+	</div>
+</div>	
+<div style="background-image:url('{%static "contactuspic.jpeg" %}') ; width: 1500px ; height: 400px; padding :40px ">
+
+    <div class="container-fluid lyr" >
+	
+		<div class="container">
+
+		   <div class="row text-light mt-5">
+			  <div class="col-md-12" style="text-align: center">
+				  <h3><span style="font-family:Gill Sans; color:rgb(26, 5, 145);" ><b>SUBSCRIBE TO OUR NEWS LETTER</b></h3>
+			      <input class="mt-3"type="text" name="" placeholder=" Email Address" ><br/><br/>
+                  <a href="{% url "thankyou" %}"><button class="btn btn-success ml-1 "><span style="font-family:Gill Sans" >SUBSCRIBE</button></span></a>
+                </div>  
+			</div>
+		</div>
+	
+	</div>
+</div>			
+		 
+{% endblock %}

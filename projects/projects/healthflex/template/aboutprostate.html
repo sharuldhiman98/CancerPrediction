@@ -1,0 +1,122 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <div class=" text-center mt-5">
+      
+
+
+
+
+        <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+          <div class = "row pt-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <button class="btn btn-info"><a class="text-light" href="{% url "aboutprostate" %}">About Prostate Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualprostate" %}">Prostate Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light" href="{% url "prostatepredict" %}">Make Predictions</a></button></div><br><br>
+                <div class="col-md-1"></div>
+
+            
+        
+
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           What id Prostate Cancer?
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Prostate cancer is the development of cancer in the prostate, a gland in the male reproductive system. Most prostate cancers are slow growing; however, some grow relatively quickly. The cancer cells may spread from the prostate to other areas of the body, particularly the bones and lymph nodes. It may initially cause no symptoms. In later stages, it can lead to difficulty urinating, blood in the urine or pain in the pelvis, back, or when urinating. A disease known as benign prostatic hyperplasia may produce similar symptoms. Other late symptoms may include feeling tired due to low levels of red blood cells. 
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Signs and symptoms 
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            Early prostate cancer usually has no clear symptoms. Sometimes prostate cancer does cause symptoms, often similar to those of diseases such as benign prostatic hyperplasia. These include frequent urination, nocturia (increased urination at night), difficulty starting and maintaining a steady stream of urine, hematuria (blood in the urine), and dysuria (painful urination). A study based on the 1998 Patient Care Evaluation in the US found that about a third of patients diagnosed with prostate cancer had one or more such symptoms, while two-thirds had no symptoms. 
+            Prostate cancer is associated with urinary dysfunction as the prostate gland surrounds the prostatic urethra. Changes within the gland, therefore, directly affect urinary function. Because the vas deferens deposits seminal fluid into the prostatic urethra, and secretions from the prostate gland itself are included in semen content, prostate cancer may also cause problems with sexual function and performance, such as difficulty achieving erection or painful ejaculation. 
+            Metastatic prostate cancer that has spread to other parts of the body can cause additional symptoms. The most common symptom is bone pain, often in the vertebrae (bones of the spine), pelvis, or ribs. Spread of cancer into other bones such as the femur is usually to the proximal or nearby part of the bone. Prostate cancer in the spine can also compress the spinal cord, causing tingling, leg weakness and urinary and fecal incontinence.
+            
+            
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Causes
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            It's not clear what causes prostate cancer. Doctors know that prostate cancer begins when some cells in your prostatebecome abnormal. Mutations in the abnormal cells' DNA causethe cells to grow and divide more rapidly than normal cells do. The abnormal cells continue living, when other cells would die.
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Preventions
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+           <h5><b> • Diet and lifestyle</b></h5>
+            The data on the relationship between diet and prostate cancer are poor. In light of this, the rate of prostate cancer is linked to the consumption of the Western diet. There is little if any evidence to support an association between trans fat, saturated fat, and carbohydrate intake and risk of prostate cancer. Evidence regarding the role of omega-3 fatty acids in preventing prostate cancer does not suggest that they reduce the risk of prostate cancer, although additional research is needed. Vitamin supplements appear to have no effect and some may increase the risk. High calcium intake has been linked to advanced prostate cancer. 
+            Consuming fish may lower prostate-cancer deaths but does not appear to affect its occurrence. Some evidence supports lower rates of prostate cancer with a vegetarian diet. There is some tentative evidence for foods containing lycopene and selenium. Diets rich in cruciferous vegetables, soy, beans and other legumes may be associated with a lower risk of prostate cancer, especially more advanced cancers. 
+            Men who get regular exercise may have a slightly lower risk, especially vigorous activity and the risk of advanced prostate cancer. 
+            
+            <h5><b> • Medications</b></h5>
+            In those who are being regularly screened, 5-alpha-reductase inhibitors (finasteride and dutasteride) reduce the overall risk of being diagnosed with prostate cancer, but there are insufficient data to determine if they have an effect on the risk of death and they may increase the chance of more serious cases.
+            
+            
+              
+              
+          </div>
+
+
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+<div class="col-md-1"></div>
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}

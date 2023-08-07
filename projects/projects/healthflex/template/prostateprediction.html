@@ -1,0 +1,73 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8 text-center " style = "font-family: Century Gothic; width: 900px ;margin-top: 15%;">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+  
+    <h1 class=" text-info pb-2" >Prostate Cancer </h1><hr>
+
+ <h4 class="pb-5" style = "font-family: Century Gothic; color: green ">Please Enter the Following Details for Making Predictions.</h4>
+   <div class="row">
+ 
+ <div class="col-md-1"></div>
+ <div class="input-group mb-3">
+
+  <div class="col-md-3">
+
+
+        
+    <input type="number" class="form-control" placeholder="Radius" name="radius"  ><hr>
+    <input type="number" class="form-control" placeholder="Texture" name="texture" ><hr>
+    <input type="number" class="form-control" placeholder="Perimeter" name="perimeter" ><hr>
+   
+ 
+    
+</div>
+<div class="col-md-1"></div>
+
+
+<div class="col-md-3">
+
+<input type="number" class="form-control" placeholder="Area" name="area"><hr>
+<input type="number" class="form-control" placeholder="Smoothness" name="smoothness"><hr>
+<input type="number" class="form-control" placeholder="Compactness" name="compactness"><hr>
+
+
+
+
+</div>
+<div class="col-md-1"></div>
+
+<div class="col-md-3">
+
+<input type="number" class="form-control" placeholder="Symmetry" name="symmetry" ><hr>
+<input type="number" class="form-control" placeholder="fractal_dimension" name="fractal_dimension"><hr>
+<div class="text-center">
+    <input class="btn btn-info"  type="submit" value="submit"/>
+        </div>
+</div>
+
+   </div>
+   </div>
+
+
+</form>
+
+
+</div>
+<div class="col-md-1"></div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

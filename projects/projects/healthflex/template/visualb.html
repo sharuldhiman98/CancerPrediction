@@ -1,0 +1,167 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+      
+        <div class=" text-center mt-5" style ="font-family: Century Gothic; width: 900px">
+
+            <div class = "row pt-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-info"><a class="text-light" href="{% url "aboutb" %}">About Breast Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualb" %}">Breast Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light"  href="{% url "breastpredict" %}">Make Predictions</a></button></div><br><br>
+                  <div class="col-md-1"></div>
+
+
+                </div><hr>
+
+             
+
+                
+               <p style = "font-family: Century Gothic; color: green ">Click Below for Making Your Own Visualizations.</p>
+               <form action="" method="POST">
+                {% csrf_token %}
+               <div class=" dropdown">
+                
+                <select name="type" class="p-2">
+                  
+                  
+  
+                    <option value="radius_mean" >Radius_mean</option>
+                    <option value="texture_mean" >Texture_mean</option>
+                    <option value="perimeter_mean" >Perimeter_mean</option>
+                    <option value="area_mean" >Area_mean</option>
+                    <option value="smoothness_mean" >Smoothness_mean </option>
+                    <option value="compactness_mean" >Compactness_mean</option>
+                    <option value="concavity_mean" >Concavity_mean</option>
+                    <option value="concave_points_mean" >Concave points_mean</option>
+                    <option value="symmetry_mean" >Symmetry_mean</option>
+                    <option value="radius_worst" >radius_worst</option>
+                    
+                   
+               
+                   
+                   
+                 
+                   
+                
+                    <option value="fractal_dimension_mean" >Fractal_dimension_mean</option>
+  
+                    <option value="symmetry_se " >symmetry_se</option>
+  
+                    <option value="radius_se" >Radius_se</option>
+                    <option value="texture_se" >texture_se</option>
+                    <option value="perimeter_se" >perimeter_se</option>
+                    <option value="area_se" >area_se</option>
+                    <option value="smoothness_se" >smoothness_se</option>
+                    <option value="compactness_se" >compactness_se</option>
+                    <option value="concavity_se" >concavity_se</option>
+                    <option value="concave_points_se" >concave points_se</option>
+                    <option value="fractal_dimension_se" >fractal_dimension_se</option>                                  
+                    <option value="texture_worst" >texture_worst</option>
+                    <option value="perimeter_worst" >perimeter_worst</option>
+                    <option value="area_worst" >area_worst</option>
+                    <option value="smoothness_worst" >Smoothness_worst</option>
+                    <option value="compactness_worst" >compactness_worst</option>
+                    <option value="concavity_worst" >concavity_worst</option>
+                    <option value="concave_points_worst" >concave points_worst</option>
+                    <option value="symmetry_worst" >symmetry_worst</option>
+                    <option value="fractal_dimension_worst" >fractal_dimension_worst</option>
+                   
+  
+                    </select>
+                    <input class="btn" style="background: lightseagreen;" type="submit" value="submit"/>
+               </div>
+               
+            </form>
+
+<br>
+<form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+
+                  <div class = "row mt-3">
+                   <div class="col-md-12 text-info"><hr>
+                       <h2 class="mb-3"> Visualizations of Breast Cancer</h2><hr><br>
+
+                   </div>
+
+
+
+                    <div class = "row pt-3">
+                      
+                      <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                 <img class= "mb-3" src={%static "visualb/bins.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                 <img class= "mb-3" src={%static "visualb/group-sum.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                 <img class= "mb-3" src={%static "visualb/groupby.png" %} class="d-block " alt="..."width="100%"  height="300px" ><br> 
+                 <img class= "mb-3" src={%static "visualb/tex.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                 <img class= "mb-3" src={%static "visualb/box-group.png" %} class="d-block" alt="..."width="100%" height="300px" ><br>                
+                <img class= "mb-3" src={%static "visualb/bp1.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+
+                <img class= "mb-3" src={%static "visualb/bp2.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                <img class= "mb-3" src={%static "visualb/pie.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+
+                <img class= "mb-3" src={%static "visualb/pie1.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                <img class= "mb-3" src={%static "visualb/hist.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                <img class= "mb-3" src={%static "visualb/hist-subplots.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+              
+              
+              
+              
+              
+              
+              
+              </div>
+
+
+
+
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-4">
+
+                          <img class= "mb-3" src={%static "visualb/bins2.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                          <img class= "mb-3" src={%static "visualb/groupby1.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                          <img class= "mb-3" src={%static "visualb/radius.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                          <img class= "mb-3" src={%static "visualb/bp-horizontal.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>   
+                          <img class= "mb-3" src={%static "visualb/box-grouping.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>  
+                          <img class= "mb-3" src={%static "visualb/box-plot.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                          <img class= "mb-3" src={%static "visualb/bp3.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                          <img class= "mb-3" src={%static "visualb/pie3.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                          <img class= "mb-3" src={%static "visualb/hist.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                          <img class= "mb-3" src={%static "visualb/hist2.png" %}  class="d-block " alt="..." width="100%" height="300px" ><br>
+                        </div>
+                    
+                       
+
+                                 <div class="col-md-1"></div>
+        
+                       
+                        </div>
+
+
+
+
+                        </div>
+                
+                
+                
+                </div>
+
+
+                    </div>
+                    </form>
+
+                  
+    </div>
+  </div>
+  </div>
+  
+
+          {% endblock %}

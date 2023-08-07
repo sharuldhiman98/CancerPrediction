@@ -1,0 +1,123 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+      
+        <div class=" text-center mt-5" style ="font-family: Century Gothic; width: 900px">
+
+            <div class = "row pt-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-info"><a class="text-light" href="{% url "aboutlung" %}">About Lung Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visuallung" %}">Lung Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light" href="{% url "lungpredict" %}">Make Predictions</a></button></div><br><br>
+                  <div class="col-md-1"></div>
+
+
+                </div><hr>
+
+             
+
+                
+               <p style = "font-family: Century Gothic; color: green ">Click Below for Making Your Own Visualizations.</p>
+               <form action="" method="POST">
+                {% csrf_token %}
+                 <div class=" dropdown">
+                
+                  <select name="type" class="p-2">
+                  
+                  
+
+                  <option value="Smokes">Smokes</option>
+                    <option value="AreaQ">Area</option>
+                    <option value="Alkhol">Alcohol</option>
+                    <option value="Result">Result</option>
+                   </div>
+                   
+  
+                    </select>
+                    <input class="btn" style="background: lightseagreen;" type="submit" value="submit"/>
+               </div>
+              </form>
+               
+            
+
+<br>
+             
+              <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px    lightseagreen; border-radius:12% ">
+
+
+                <div class = "row mt-3">
+                 <div class="col-md-12 text-info"><hr>
+                     <h2 class="mb-3"> Visualizations of Lung Cancer</h2><hr><br>
+
+                 </div>
+
+
+
+                  <div class = "row pt-5">
+                    
+                    <div class="col-md-1"></div>
+                      <div class="col-md-4">
+               <img class= "mb-3" src={%static "lung/1.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+               <img class= "mb-3" src={%static "lung/2.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+               <img class= "mb-3" src={%static "lung/3.png" %} class="d-block " alt="..."width="100%"  height="300px" ><br> 
+               <img class= "mb-3" src={%static "lung/4.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+               <img class= "mb-3" src={%static "lung/5.png" %} class="d-block" alt="..."width="100%" height="300px" ><br>                
+
+              
+            
+            
+            
+            
+            
+            </div>
+
+
+
+
+
+                      <div class="col-md-1"></div>
+
+                      <div class="col-md-4">
+
+                        <img class= "mb-3" src={%static "lung/6.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "lung/7.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                        <img class= "mb-3" src={%static "lung/8.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "lung/9.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>   
+                        <img class= "mb-3" src={%static "lung/10.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>  
+                      
+                      </div>
+                  
+                     
+
+                               <div class="col-md-1"></div>
+      
+                     
+                      </div>
+
+
+
+
+                      </div>
+              
+              
+              
+              </div>
+
+
+                  </div>
+                  </form>
+
+                
+  </div>
+</div>
+</div>
+
+
+        {% endblock %}

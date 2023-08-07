@@ -1,0 +1,103 @@
+<DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>USER-PANEL </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- CSS files -->
+    <link rel="stylesheet" href="{%static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{%static "user/css/icofont.css"  %}">
+    <link rel="stylesheet" href="{%static "user/sidebar/style.default.css"  %}">
+    <link rel="shortcut icon" href="{%static "/favicon.png"  %}">
+    <link rel="stylesheet" href="{%static "user/sidebar/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"  %}">
+</head>
+
+<body>
+  <!-- Side Navbar -->
+  <nav class="side-navbar">
+    <div class="side-navbar-wrapper">
+      <!-- Sidebar Header    -->
+      <div class="sidenav-header d-flex align-items-center justify-content-center">
+        <!-- User Info-->
+        <div class="sidenav-header-inner text-center"><img src={%static "admin.png" %} alt="admin" class="img-fluid rounded-circle">
+          <h2 class="h5"> USER </h2>
+        </div>
+        <!-- Small Brand information, appears on minimized sidebar-->
+        <div class="sidenav-header-logo"><a href="#" class="brand-small text-center"> <strong>H</strong><strong class="text-primary">F</strong></a></div>
+      </div>
+      <!-- Sidebar Navigation Menus-->
+      <div class="main-menu">
+        <h5 class="sidenav-heading">HEALTHFLEX</h5>
+        <ul id="side-main-menu" class="side-menu list-unstyled"> 
+
+          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows icofont-stack-exchange pb-4-"></i>My Account</a>
+              <ul id="exampledropdownDropdown"  class="collapse list-unstyled ">
+                <li ><a href= "{% url "myprofile" %}" class="l1">My Profile</a></li>
+                <li ><a href="{% url "editprofile" %}" class="l1">Edit Profile</a></li>
+                
+              </ul>
+            </li>                
+            <li><a href="{% url "review" %}"> <i class="icofont icofont-notepad"></i>Review</a></li>
+           <li><a href="{% url "changepassword" %}"> <i class="icofont icofont-ui-password"></i>Change Password</a></li>
+           <li><a href="{% url "helpsupport" %}"><i class="icofont icofont-support"></i>Help & Support</a></li>
+           <li><a href="{% url "viewdoctor" %}"> <i class="icofont icofont-doctor"></i>Doctors</a></li>
+           <li><a href="{% url "viewhospital" %}"> <i class="icofont icofont-hospital"></i>Hospitals</a></li>
+
+           <li><a href="{% url "login" %}" <i class="icofont icofont-exit"></i>Log Out</a></li>
+            
+           
+          </ul>
+        </div>
+       
+        </div>
+     
+    </nav>
+    <div class="page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class=" menu-btn text-info"><i class="icofont icofont-bubble-left icofont-3x"> </i></a><a href="#" class="navbar-brand">
+                  <div class="brand-text d-none d-md-inline-block"><span style="color: blue ; font-size: x-large;"><b>Health</b></span><strong style="color: teal; font-size: xx-large; font-family: century gothic ">Flex</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+             
+              
+                
+                <!-- Log out-->
+                <li class="nav-item"><a href="{% url "login" %}" class="nav-link logout"> <span class="d-none d-sm-inline-block">Logout</span><i class="icofont icofont-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      
+        
+	  </div>
+	  
+
+
+	  <div class="content " >
+		<div class="row">
+			<div class="col-md-12" >
+			{% block content %}
+			{% endblock %}
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+  <script src="{% static "user/js/jquery-3.4.1.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "user/sidebar/front.js" %}"></script>
+  <script src="{% static "user/sidebar/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+  </body>
+  </html>
+    

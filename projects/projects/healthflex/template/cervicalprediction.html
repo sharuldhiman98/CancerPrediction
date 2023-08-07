@@ -1,0 +1,96 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8 text-center " style = "font-family: Century Gothic; width: 900px ;margin-top: 15%;">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+  
+    <h1 class=" text-info pb-2" >Cervical Cancer </h1><hr>
+
+ <h4 class="pb-5" style = "font-family: Century Gothic; color: green ">Please Enter the Following Details for Making Predictions.</h4>
+   <div class="row">
+ 
+ <div class="col-md-1"></div>
+ <div class="input-group mb-3">
+
+  <div class="col-md-3">
+
+
+        <input type="number" class="form-control" placeholder="Age"   name="Age" ><hr>
+        <input type="number" class="form-control" placeholder="sexual_partners" name="sexual_partners" ><hr>
+        <input type="number" class="form-control" placeholder="First_sexual_intercourse" name="First_sexual_intercourse" ><hr>
+        <input type="number" class="form-control" placeholder="No. of Pregnancies" name="Pregnancies" ><hr>
+        <input type="number" class="form-control" placeholder="Smokes" name="Smokes" ><hr>
+        <input type="number" class="form-control" placeholder="Smoking_years" name="Smokes_years" ><hr>
+        <input type="number" class="form-control" placeholder="Smokes (packs/year)" name="Smokes_packsoryear"><hr>
+        <input type="number" class="form-control" placeholder="Hormonal Contraceptives" name="Hormonal_Contraceptives" ><hr>
+        <input type="number" class="form-control" placeholder=" Hormonal Contraceptives (years)" name=" Hormonal_Contraceptives_years" ><hr>
+        <input type="number" class="form-control" placeholder="IUD" name="IUD"><hr>
+        <input type="number" class="form-control" placeholder="IUD (years)" name="IUD_years" ><hr>
+        <input type="number" class="form-control" placeholder="STDs" name="STDs"><hr>
+        
+    </div>
+ <div class="col-md-1"></div>
+
+
+ <div class="col-md-3">
+   
+    <input type="number" class="form-control" placeholder="STDs (number)" name="STDs_number"><hr>
+    <input type="number" class="form-control" placeholder="STDs:condylomatosis" name="STDs_condylomatosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs:cervical condylomatosis" name="STDs_cervical_condylomatosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs:vaginal condylomatosis"   name="STDs_vaginal_condylomatosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs:vulvo-perineal condylomatosis"  name="STDs_vulvoperineal_condylomatosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs:syphilis"  name="STDs_syphilis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_pelvic_inflammatory_disease"  name="STDs_pelvic_inflammatory_disease" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_genital_herpes"  name="STDs_genital_herpes"><hr>
+    <input type="number" class="form-control" placeholder="STDs_molluscum_contagiosum"  name="STDs_molluscum_contagiosum" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_AIDS"  name="STDs_AIDS" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_HIV"  name="STDs_HIV" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_Hepatitis B" name="STDs_Hepatitis_B"  ><hr>
+    <div class="text-center">
+      <input class="btn btn-info"  type="submit" value="submit"/>
+      </div>
+    
+</div>
+<div class="col-md-1"></div>
+
+<div class="col-md-3">
+
+
+    <input type="number" class="form-control" placeholder="STDs_HPV" name="STDs_HPV" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_diagnosis" name="STDs_diagnosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_Time_since_first_diagnosis" name="STDs_Time_since_first_diagnosis" ><hr>
+    <input type="number" class="form-control" placeholder="STDs_Time_since_last_diagnosis" name="STDs_Time_since_last_diagnosis"><hr>
+    <input type="number" class="form-control" placeholder="Dx_Cancer" name="Dx_Cancer"><hr>
+    <input type="number" class="form-control" placeholder="Dx_CIN" name="Dx_CIN"><hr>
+    <input type="number" class="form-control" placeholder="Dx_HPV" name="Dx_HPV" ><hr>
+    <input type="number" class="form-control" placeholder="Dx" name="Dx" ><hr>
+    <input type="number" class="form-control" placeholder="Hinselmann" name="Hinselmann"><hr>
+    <input type="number" class="form-control" placeholder="Schiller" name="Schiller"><hr>
+    <input type="number" class="form-control" placeholder="Citology" name="Citology" ><hr>
+
+</div>
+
+   </div>
+   </div>
+
+
+</form>
+
+
+</div>
+<div class="col-md-1"></div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

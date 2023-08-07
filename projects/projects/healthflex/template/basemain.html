@@ -1,0 +1,310 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>HEALTHFLEX</title>
+		<link rel="shortcut icon" type="text/css" href="{%static "project.png" %}">
+
+
+	<link rel="stylesheet" type="text/css" href="{%static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{%static "icofont/icofont.min.css" %}">
+      <script type="text/javascript" src="{%static  "js/jquery.js" %}"></script>
+      <script type="text/javascript" src="{%static "js/popper.min.js"  %}"></script>
+      <script type="text/javascript" src= "{%static "js/bootstrap.min.js"  %}"></script>
+     <script > 
+     	function f1() 
+     	{
+     		document.getElementById("i1").style.padding="5px";
+     		
+     	}
+     	function f2() 
+     	{
+     		document.getElementById("i1").style.padding="1px";
+     		
+     	}
+
+
+     	function f3() 
+     	{
+     		document.getElementById("i2").style.padding="5px";
+     		
+     	}
+     	function f4() 
+     	{
+     		document.getElementById("i2").style.padding="1px";
+     		
+     	}
+
+
+     	function f5() 
+     	{
+     		document.getElementById("i3").style.padding="5px";
+     		
+     	}
+     	function f6() 
+     	{
+     		document.getElementById("i3").style.padding="1px";
+     		
+     	}
+
+
+     	function f7() 
+     	{
+     		document.getElementById("i4").style.padding="5px";
+     		
+     	}
+     	function f8() 
+     	{
+     		document.getElementById("i4").style.padding="1px";
+     		
+     	}
+      function f9() 
+      {
+        document.getElementById("i5").style.padding="5px";
+        
+      }
+      function f10() 
+      {
+        document.getElementById("i5").style.padding="1px";
+        
+      }
+      function f11() 
+      {
+        document.getElementById("i6").style.padding="5px";
+        
+      }
+      function f12() 
+      {
+        document.getElementById("i6").style.padding="1px";
+        
+      }
+      function f13() 
+      {
+        document.getElementById("i7").style.padding="5px";
+        
+      }
+      function f14() 
+      {
+        document.getElementById("i7").style.padding="1px";
+        
+      }
+
+      function f15() 
+      {
+        document.getElementById("i8").style.padding="5px";
+        
+      }
+      function f16() 
+      {
+        document.getElementById("i8").style.padding="1px";
+        
+      }
+      function f17() 
+      {
+        document.getElementById("i9").style.padding="5px";
+        
+      }
+      function f18() 
+
+      {
+        document.getElementById("i9").style.padding="1px";
+        
+      }
+      function f19() 
+      {
+        document.getElementById("i10").style.padding="5px";
+        
+      }
+      function f20() 
+      {
+        document.getElementById("i10").style.padding="1px";
+        
+      }
+ </script>
+	<style >
+		.lyr{background-color: rgba(39,40,77,0.50);padding: 150px}
+	</style>
+
+<script>
+  CKEDITOR.replace("message");
+  //in this example CKEDITOR.replace( '#id_blogbody' )
+</script>
+<style>
+
+  .flash-button{
+    background:rgb(3, 158, 179);
+    padding:5px 10px;
+    color:black;
+    border:none;
+    border-radius:5px;
+    
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes flash {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1.0; }
+  
+  
+  }
+  .flash-button1{
+    background:rgb(3, 158, 179);
+    padding:5px 10px;
+    color:black;
+    border:none;
+    border-radius:5px;
+    
+    animation-name: flash1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes flash1 {  
+      0% { opacity: 1.0; }
+      70% { opacity: 0.5; }
+      100% { opacity: 1.0; }
+  }
+  </style>
+<style>
+.box{
+    background-image:url('{%static "image/contactuspic.jpeg" %}');
+    background-size: cover;
+    }
+
+</style>
+
+</head>
+   <body>
+     
+	<div class="row text-secondary pt-2  bg-light " style="border-bottom: 1px solid #C5D0DA ; font-size:smaller; font-family: Gill Sans " >
+		<div class="col-md-6 " style="text-align: left;"><b> <a class= text-dark href="http://cancerindia.org.in/faqs/">FAQ</a> &nbsp&nbsp   <a class= text-dark href="{% url "contactus" %}">REQUEST AN APPOINTMENT</a> &nbsp&nbsp <a class= text-dark href="{% url "services" %}"> INFO</a> </b></div>
+         
+         <div class="col-md-2 " style="text-align: left;">  </div>
+         <div class = "col-md-4 text-right text-secondary" > <i class="icofont-ambulance-cross"></i> Emergency Line <b> 7896754323</b></div></div></div>
+    <nav class ="navbar navbar-expand-lg navbar-light bg-light p-2 sticky-top bg-secondary">
+        <a class ="navbar-brand text-secondary" href="#"><span  class="ml-5"style="color: darkblue ; font-family: Arial Black; font-size: 30px;text-align: right; "> HEALTH<span class="text-info">FLEX</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent" style="font-size: small">
+          <ul class="navbar-nav ml-auto mr-5 ">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url "mainproject" %}">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            
+          
+              
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url "services" %}">SERVICES <span class="sr-only">(current)</span></a>
+            </li>
+               
+      
+      
+             <li class="nav-item active">
+              <a class="nav-link" href="{% url "aboutus" %}">ABOUT US <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url "contactus" %}">CONTACT <span class="sr-only">(current)</span></a>
+            </li>
+           
+      
+         
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="flash-button "><b>LOGIN/REGISTER</b></button>
+              </a>
+              <div class="dropdown-menu bg-info" aria-labelledby ="navbarDropdown">
+                <a class="dropdown-item" href="{% url "login" %}"><b>User Login</b></a>
+              <a class="dropdown-item" href="{% url "register" %}"><b>User Register</b></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url "doctorlogin" %}"><b>Doctor Login</b></a>
+               
+              </div>
+            </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="icofont-share "></i> <span class="sr-only">(current)</span></a>
+            </li>
+      
+      
+      
+      
+      
+          </ul>
+      
+          
+        </div>
+      </nav>
+    
+    <div class="content " >
+        <div class="row">
+            <div class="col-md-12" >
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class="footer" >
+      <div class="container-fluid text-light " style="background-color: darkblue ">
+          <div class="container">
+              <div class="row pt-5 pb-5">
+              <div class="col-md-6">
+                  <h2><SPAN style="color: white;font-family:Arial Black">HEALTH</SPAN><span class="text-info" style="font-family: Arial Black">FLEX</span></h2>
+                  <h5 class="pt-2"> <i class="icofont-location-arrow pt-2 text-info "><span style="font-family:Gill Sans" ></i>&nbsp928,GT.ROAD,AMRITSAR,PUNJAB<br/></h5>
+                  <h5 class="pt-2"><i class="icofont-ui-call  pt-2 text-success"><span style="font-family:Gill Sans" ></i>&nbsp788888456</h5>
+                  <h5 class="pt-2"><i class="icofont-mail-box pt-2 text-danger"><span style="font-family:Gill Sans" ></i>&nbsphealthflex4u@gmail.com</h5>
+                   
+                </div>
+              
+                  <div class="col-md-6">
+                      <div class="row">
+                          <div class="col-md-6">
+                          <h5 class="pb-3"><span style="font-family:Gill Sans" ><U><B>QUICK LINKS </B></U></h5>
+                          <p style="color: grey">ABOUT US</P>
+                          <P style="color: grey">APPOINTMENT</P>
+                          <P style="color: grey">DEPARTMENT</P>
+                          <P style="color: grey">HEALTH CHECK</P>
+                          <i class="icofont-facebook bg-primary icofont-2x"></i>
+                          <i class="icofont-twitter bg-info icofont-2x"></i>
+                          <i class="icofont-instagram icofont-2x"></i>
+                          <i class="icofont-brand-youtube bg-danger icofont-2x"></i>
+                          <i class="icofont-brand-google pr-2 icofont-2x"></i>
+                          </div>
+                          <div class="col-md-6">
+                          <h5 class="pb-3"><U><B><span style="font-family:Gill Sans" >LATEST NEWS</B></U></h5>
+                          <p style="color: grey">ABOUT US</P>
+                          <P style="color: grey">APPOINTMENT</P>
+                          <P style="color: grey">DEPARTMENT</P>
+                          <P style="color: grey">HEALTH CHECK</p>	
+                          </div>
+                      </div>	     
+              </div>
+              
+              
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="container-fluid bg-info text-light ">
+          <div class="container">
+          <div class="row">
+              <div class="col-md-12 text-center pt-2" >
+                <p><b><SPAN style="color:black">healthflex4u</SPAN><SPAN class="text-light">@gmail.com</SPAN></b></p>
+                  
+                <p>&reg2020<b><SPAN style="color:darkblue">HEALTH</SPAN><SPAN class="text-light">FLEX</SPAN></b></p>
+                  </div>
+          </div>
+          </div>
+
+  
+    </div>
+    
+</body>
+</html>

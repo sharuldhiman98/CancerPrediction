@@ -1,0 +1,156 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+      
+        <div class=" text-center mt-5" style ="font-family: Century Gothic; width: 900px">
+
+            <div class = "row pt-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <button class="btn btn-info"><a class="text-light" href="{% url "aboutcervical" %}">About Cervical Cancer</a></button>&nbsp&nbsp
+                <button class="btn btn-info" ><a class="text-light" href="{% url "visualcervical" %}">Cervical Cancer Visualizations</a></button>&nbsp&nbsp
+                <button class="btn btn-info"><a class="text-light"  href="{% url "cervicalpredict" %}">Make Predictions</a></button></div><br><br>
+                  <div class="col-md-1"></div>
+
+
+                </div><hr>
+
+             
+
+                
+               <p style = "font-family: Century Gothic; color: green ">Click Below for Making Your Own Visualizations.</p>
+               <form action="" method="POST">
+                {% csrf_token %}
+                 <div class=" dropdown">
+                
+                  <select name="type" class="p-2">
+                  
+                <option value= "First_sexual_intercourse">First sexual intercourse</option>
+                <option value="Pregnancies" >Num of pregnancies</option>
+                <option value="Smokes_years" >Smokes (years)</option>
+                <option value="Smokes" >Smokes</option>
+                <option value="Smokes_packsoryear" >Smokes (packs/year)</option>
+                <option value="Hormonal_Contraceptives" >Hormonal Contraceptives</option>
+                <option value="Hormonal_Contraceptives_years" >Hormonal Contraceptives years</option>
+
+                <option value="IUD">IUD</option>
+                <option value="IUD_years" >IUD (years)</option>
+                <option value= "STDs">STDs</option>
+                <option value="STDs_number" >STDs (number)</option>
+                <option value="STDs_condylomatosis" >STDs:condylomatosis</option>
+                <option value= "STDs_cervical_condylomatosis">STDs:cervical condylomatosis</option>
+                <option value= "STDs_vaginal_condylomatosis">STDs:vaginal condylomatosis</option>
+                <option value="STDs_vulvoperineal_condylomatosis" >STDs:vulvo-perineal condylomatosis</option>
+                <option value="STDs_syphilis" >STDs:syphilis</option>
+                <option value= "STDs_pelvic_inflammatory_disease">STDs:pelvic inflammatory disease</option>
+
+                
+
+                 <option value="STDs_genital_herpes" >STDs:genital herpes</option>
+                 <option value= "STDs_molluscum_contagiosum">STDs:molluscum contagiosum</option>
+                 <option value="STDs_AIDS" >STDs:AIDS</option>
+                 <option value="STDs_HIV" >STDs:HIV</option>
+                 <option value= "STDs_Hepatitis_B">STDs:Hepatitis B</option>
+                 <option value="STDs_HPV" >STDs:HPV</option>
+                 <option value="STDs_Number_of_diagnosis" >STDs: Number of diagnosis</option>
+                 <option value="STDs_Time_since_first_diagnosis" >STDs: Time since first diagnosis</option>
+                 <option value="STDs_Time_since_last_diagnosis" >STDs: Time since last diagnosis</option>
+                 <option value="Dx_Cancer" >Dx:Cancer</option>
+                 <option value="Dx_CIN" >Dx:CIN</option>
+                 <option value= "Dx_HPV">Dx:HPV</option>
+
+               
+                 <option value= "Dx">Dx</option>
+                 <option value="Hinselmann">Hinselmann</option>
+                 <option value="Dx_Cancer" >Dx:Cancer</option>
+                 <option value="Schiller" >Schiller</option>
+                 <option value= "Citology">Citology</option>
+                 
+                   
+  
+                    </select>
+                    <input class="btn" style="background: rgb(6, 125, 146);" type="submit" value="submit"/>
+               </div>
+              </form>
+              <br>
+              <form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightseagreen; border-radius:12% ">
+
+              <p style = "font-family: Century Gothic; color: green ">Click Below for Making Your Own Visualizations.</p>
+                  
+             
+
+                <div class = "row mt-3">
+                 <div class="col-md-12 text-info"><hr>
+                     <h2 class="mb-3"> Visualizations of Cervical Cancer</h2><hr><br>
+
+                 </div>
+
+
+
+                  <div class = "row pt-5">
+                    
+                    <div class="col-md-1"></div>
+                      <div class="col-md-4">
+                        <img class= "mb-3" src={%static "cervical/1.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "cervical/11.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                        <img class= "mb-3" src={%static "cervical/111.png" %} class="d-block " alt="..."width="100%"  height="300px" ><br> 
+                        <img class= "mb-3" src={%static "cervical/1111.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "cervical/11111.png" %} class="d-block" alt="..."width="100%" height="300px" ><br>                
+                      
+                     
+            
+            
+            
+            
+            
+            
+            </div>
+
+
+
+
+
+                      <div class="col-md-1"></div>
+
+                      <div class="col-md-4">
+
+                        <img class= "mb-3" src={%static "cervical/2.png" %}  class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "cervical/22.png" %}  class="d-block" alt="..." width="100%" height="300px" ><br>
+                        <img class= "mb-3" src={%static "cervical/222.png" %}   class="d-block " alt="..." width="100%" height="300px"><br> 
+                        <img class= "mb-3" src={%static "cervical/2222.png" %}   class="d-block " alt="..." width="100%" height="300px"><br>   
+                     
+                      </div>
+                  
+                     
+
+                               <div class="col-md-1"></div>
+      
+                     
+                      </div>
+
+
+
+
+                      </div>
+              
+              
+              
+              </div>
+
+
+                  </div>
+                  </form>
+
+                
+  </div>
+</div>
+</div>
+
+
+        {% endblock %}

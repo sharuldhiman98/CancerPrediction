@@ -1,0 +1,121 @@
+{% extends 'drpanelbase.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container"> 
+    <div class = "row pt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+
+        <div class=" text-center mt-5">
+        
+
+<form style = "font-family: Century Gothic; width: 900px  ; border : 100px ; padding: 50px; box-shadow: -10px 10px   lightskyblue; border-radius:12% ">
+    <div class = "row pt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <button class="btn btn-info " href="{% url "aboutskin" %}">About Skin Cancer</button>&nbsp&nbsp
+        <button class="btn btn-info "  href="{% url "visualskin" %}">Skin Cancer Visualizations</button>&nbsp&nbsp
+        <button class="btn btn-info "  href="#">Make Predictions</button></div>
+            
+      
+
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           What id Skin Cancer?
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Skin cancers are cancers that arise from the skin. They are due to the development of abnormal cells that have the ability to invade or spread to other parts of the body. There are three main types of skin cancers: basal-cell skin cancer (BCC), squamous-cell skin cancer (SCC) and melanoma. The first two, along with a number of less common skin cancers, are known as nonmelanoma skin cancer (NMSC). Basal-cell cancer grows slowly and can damage the tissue around it but is unlikely to spread to distant areas or result in death.[5] It often appears as a painless raised area of skin that may be shiny with small blood vessels running over it or may present as a raised area with an ulcer. Squamous-cell skin cancer is more likely to spread. It usually presents as a hard lump with a scaly top but may also form an ulcer. Melanomas are the most aggressive. Signs include a mole that has changed in size, shape, color, has irregular edges, has more than one color, is itchy or bleeds. 
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Signs and symptoms 
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            There are a variety of different skin cancer symptoms. These include changes in the skin that do not heal, ulcering in the skin, discolored skin, and changes in existing moles, such as jagged edges to the mole and enlargement of the mole.
+            
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Causes
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            Ultraviolet radiation from sun exposure is the primary environmental cause of skin cancer. This can occur in professions such as farming. Other risk factors that play a role include:
+•	Light skin color 
+•	Age 
+•	Smoking tobacco
+•	HPV infections increase the risk of squamous-cell skin cancer. 
+•	Some genetic syndromes including congenital melanocytic nevi syndrome which is characterized by the presence of nevi (birthmarks or moles) of varying size which are either present at birth, or appear within 6 months of birth. Nevi larger than 20 mm (3/4") in size are at higher risk for becoming cancerous.
+•	Chronic non-healing wounds. These are called Marjolin's ulcers based on their appearance, and can develop into squamous-cell skin cancer.
+•	Ionizing radiation such as X-rays, environmental carcinogens, and artificial UV radiation (e.g. tanning beds). It is believed that tanning beds are the cause of hundreds of thousands of basal and squamous-cell skin cancer. The World Health Organization now places people who use artificial tanning beds in its highest risk category for skin cancer. Alcohol consumption, specifically excessive drinking increase the risk of sunburns. 
+•	The use of many immunosuppressive medications increases the risk of skin cancer. Cyclosporin A, a calcineurin inhibitor for example increases the risk approximately 200 times, and azathioprine about 60 times. 
+
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Preventions
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+           <h5><b> •Lifestyle</b> </h5>
+           Sunscreen is effective and thus recommended to prevent melanomaand squamous-cell carcinoma. There is little evidence that it is effective in preventing basal-cell carcinoma. Other advice to reduce rates of skin cancer includes avoiding sunburning, wearing protective clothing, sunglasses and hats, and attempting to avoid sun exposure or periods of peak exposure. The U.S. Preventive Services Task Force recommends that people between 9 and 25 years of age be advised to avoid ultraviolet light. 
+The risk of developing skin cancer can be reduced through a number of measures including decreasing indoor tanning and mid day sun exposure, increasing the use of sunscreen, and avoiding the use of tobacco products.
+There is insufficient evidence either for or against screening for skin cancers. Vitamin supplements and antioxidant supplements have not been found to have an effect in prevention. Evidence for reducing melanoma risk from dietary measures is tentative, with some supportive epidemiological evidence, but no clinical trials.[44]
+Zinc oxide and titanium oxide are often used in sun screen to provide broad protection from UVA and UVB ranges. 
+Eating certain foods may decrease the risk of sunburns but this is much less than the protection provided by sunscreen. 
+A meta-analysis of skin cancer prevention in high risk individuals found evidence that topical application of T4N5 liposome lotion reduced the rate of appearance of basal cell carcinomas in people with xeroderma pigmentosum, and that acitretin taken by mouth may have a skin protective benefit in people following kidney transplant. 
+
+              
+              
+          </div>
+
+
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+<div class="col-md-1"></div>
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}
